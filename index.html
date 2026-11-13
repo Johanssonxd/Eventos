@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Interactivo PS5R</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="imgs/phantomLogo.svg">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <img src="imgs/phantomThieves.png" class="fondo" alt="Phantom Thieves">
+
+    <div class="p5-container">
+
+        <header class="p5-header">
+            <div class="title-container">
+                <h1 class="p5-title">The Phantoms</h1>
+                <h2 class="p5-subtitle">Operaciones Activas</h2>
+            </div>
+            <button id="btn-reset" class="p5-btn">REINICIAR TABLERO</button>
+        </header>
+
+        <main class="board">
+            <!-- Lista de Tareas -->
+            <div class="zone" id="zone-list">
+                <div class="zone-header white-header">
+                    <h3>LISTA DE TAREAS</h3>
+                    <span class="contador" id="contador-list">6</span>
+                </div>
+                <div class="zone-content">
+                    <div class="card" data-id="1"><span>Infiltrarse</span></div>
+                    <div class="card" data-id="2"><span>Comprar recursos</span></div>
+                    <div class="card" data-id="3"><span>Comprar medicinas</span></div>
+                    <div class="card" data-id="4"><span>Estudiar</span></div>
+                    <div class="card" data-id="5"><span>Ir a investigar</span></div>
+                    <div class="card" data-id="6"><span>Explorar Mementos</span></div>
+                </div>
+            </div>
+
+            <!-- Por Hacer -->
+            <div class="zone" id="zone-hacer">
+                <div class="zone-header black-header">
+                    <h3>POR HACER</h3>
+                    <span class="contador" id="contador-hacer">0</span>
+                </div>
+                <div class="zone-content"></div>
+            </div>
+
+            <!-- Terminadas -->
+            <div class="zone" id="zone-done">
+                <div class="zone-header red-header">
+                    <h3>TERMINADAS</h3>
+                    <span class="contador" id="contador-done">0</span>
+                </div>
+                <div class="zone-content"></div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
